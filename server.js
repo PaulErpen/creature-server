@@ -1,7 +1,7 @@
 const express = require("express")
-const path = require('path')
+const path = require("path")
 const handlebars = require("hbs")
-const YAML = require('yaml')
+const YAML = require("yaml")
 
 const app = express()
 const port = 3000
@@ -36,27 +36,27 @@ const crToXPMapping = {
     "24": 62_000,
     "30": 155_000
 }
-app.set('views', path.join(__dirname, 'views'));
-handlebars.registerHelper('ifEquals', function(arg1, arg2, options) {
+app.set("views", path.join(__dirname, "views"));
+handlebars.registerHelper("ifEquals", function(arg1, arg2, options) {
     return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
 });
-handlebars.registerHelper('ifNotEquals', function(arg1, arg2, options) {
+handlebars.registerHelper("ifNotEquals", function(arg1, arg2, options) {
     return (arg1 != arg2) ? options.fn(this) : options.inverse(this);
 });
-handlebars.registerHelper('ifGreaterThan', function(arg1, arg2, options) {
+handlebars.registerHelper("ifGreaterThan", function(arg1, arg2, options) {
     return (arg1 > arg2) ? options.fn(this) : options.inverse(this);
 });
-handlebars.registerHelper('eq', function(arg1, arg2) {
+handlebars.registerHelper("eq", function(arg1, arg2) {
     return arg1 == arg2;
 });
-handlebars.registerHelper('capitalizeFirst', function(arg1) {
+handlebars.registerHelper("capitalizeFirst", function(arg1) {
     let str = (""+arg1)
     if(str.length > 0) {
         return str.charAt(0).toUpperCase() + str.slice(1)
     }
     return str;
 });
-handlebars.registerHelper('expByCr', function(arg1) {
+handlebars.registerHelper("expByCr", function(arg1) {
     return crToXPMapping[arg1]
 });
 handlebars.registerHelper("breaklines", function(text) {
@@ -64,21 +64,21 @@ handlebars.registerHelper("breaklines", function(text) {
     text = text.replace(/(\r\n|\n|\r)/gm, "<br>");
     return new handlebars.SafeString(text);
 });
-app.set('view engine', 'hbs');
+app.set("view engine", "hbs");
 
-app.use("/", express.static(__dirname + '/public'))
-app.use("/src", express.static(__dirname + '/public/statblock5e/src'))
+app.use("/", express.static(__dirname + "/public"))
+app.use("/src", express.static(__dirname + "/public/statblock5e/src"))
 
 app.get("/", (req, res) => {
-    var fs = require('fs');
-    fs.readdir(path.join(__dirname, "monsters"), (err, files) => {
+    var fs = require("fs");
+    fs.readdir(path.join(__dirname, "creatures"), (err, files) => {
             if (err) {
-                res.status(500).send("Could'nt read monster files directory!")
+                res.status(500).send("Could'nt read creature files directory!")
             }
             res.render("index", {
-                "monsters": files
+                "creatures": files
                 .map(file => {
-                    let contents = fs.readFileSync(__dirname + "/monsters/" +file, 'utf8')
+                    let contents = fs.readFileSync(__dirname + "/creatures/" +file, 'utf8')
                     switch (file.split(".").at(-1)) {
                         case "json": return JSON.parse(contents)
                         case "yaml": return YAML.parse(contents)
