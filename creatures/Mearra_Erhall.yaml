@@ -1,0 +1,37 @@
+slug: mearra_erhall
+name: Mearra Erhall
+size: Medium
+type: human
+armor_class: 12
+armor_desc: cloth
+hit_points: 9
+hit_dice: 2d8
+speed:
+  walk: 30
+strength: 10
+dexterity: 12
+constitution: 10
+intelligence: 15
+wisdom: 14
+charisma: 13
+saving_throws:
+  Wis: "+4"
+skills:
+  Arcana: "+4"
+  Investigation: "+4"
+senses: Passive Perception 12
+languages: Common, Elvish
+proficiency_bonus: 2
+special_abilities:
+  - name: Spellcasting
+    desc: "The spellcaster’s spellcasting ability is Intelligence (spell save DC 12, +4 to hit with spell attacks).
+          The spellcaster has following wizard spells prepared:\n
+           • Cantrips (at will): fire bolt, light\n
+           • 1st level (2 slots): sleep"
+actions:
+  - name: Quarterstaff
+    desc: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. 
+          Hit: 3 (1d6) bludgeoning damage, or 4 (1d8) bludgeoning damage if used with two hands."
+reactions: ""
+legendary_desc: ""
+legendary_actions: ""

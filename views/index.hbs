@@ -39,13 +39,13 @@
     <stat-block>
       <creature-heading>
         <h1>{{this.name}}</h1>
-        <h2>{{this.size}} {{this.type}}{{#if this.subtype}} ({{this.subtype}}){{/if}}, {{this.alignment}}</h2>
+        <h2>{{this.size}} {{this.type}}{{#if this.subtype}} ({{this.subtype}}){{/if}}{{#if this.alignment}}, {{this.alignment}}{{/if}}</h2>
       </creature-heading>
   
       <top-stats>
         <property-line>
           <h4>Armor Class</h4>
-          <p>{{this.armor_class}}{{#if this.armor_desc}} (natural armor){{/if}}</p>
+          <p>{{this.armor_class}}{{#if this.armor_desc}} ({{this.armor_desc}}){{/if}}</p>
         </property-line>
         <property-line>
           <h4>Hit Points</h4>
@@ -71,6 +71,28 @@
                          data-int="{{intelligence}}"
                          data-wis="{{wisdom}}"
                          data-cha="{{charisma}}"></abilities-block>
+        {{#if saving_throws}}
+          <property-line>
+            <h4>Saving throws</h4>
+            <p>
+              {{#each saving_throws}}
+                {{~#unless @first}},{{/unless}}
+                {{@key}} {{this}}
+              {{/each}}
+            </p>
+          </property-line>
+        {{/if}}
+        {{#if skills}}
+          <property-line>
+            <h4>Skill</h4>
+            <p>
+              {{#each skills}}
+                {{~#unless @first}},{{/unless}}
+                {{@key}} {{this}}
+              {{/each}}
+            </p>
+          </property-line>
+        {{/if}}
         {{#if damage_vulnerabilities}}
           <property-line>
             <h4>Damage Vulnerabilities</h4>
@@ -105,10 +127,12 @@
           <h4>Languages</h4>
           <p>{{capitalizeFirst languages}}</p>
         </property-line>
-        <property-line>
-          <h4>Challenge</h4>
-          <p>{{challenge_rating}} ({{expByCr challenge_rating}} XP)</p>
-        </property-line>
+        {{#if challenge_rating}}
+          <property-line>
+            <h4>Challenge</h4>
+            <p>{{challenge_rating}} ({{expByCr challenge_rating}} XP)</p>
+          </property-line>
+        {{/if}}
         {{#if proficiency_bonus}}
           <property-line>
             <h4>Proficiency Bonus</h4>
