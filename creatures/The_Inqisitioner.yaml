@@ -1,9 +1,9 @@
-slug: mearra_erhall
-name: Mearra Erhall
+slug: inqisitioner_anri
+name: Anri, the inquisitioner
 size: Medium
-type: human
-armor_class: 12
-armor_desc: cloth
+type: Tiefling
+armor_class: 17
+armor_desc: breastplate, shield
 hit_points: 13
 hit_dice: 3d8
 speed:
@@ -17,21 +17,22 @@ charisma: 13
 saving_throws:
   Wis: "+4"
 skills:
-  Arcana: "+4"
+  Religion: "+4"
   Investigation: "+4"
 senses: Passive Perception 12
-languages: Common, Elvish
+languages: Common, Infernal
 proficiency_bonus: 2
+damage_resistances: Fire
 special_abilities:
   - name: Spellcasting
-    desc: "The spellcaster’s spellcasting ability is Intelligence (spell save DC 12, +4 to hit with spell attacks).
+    desc: "The spellcaster’s spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks).
           The spellcaster has following wizard spells prepared:\n
-           • Cantrips (at will): fire bolt, light\n
-           • 1st level (2 slots): sleep, burning hands"
+           • Cantrips (at will): guidance, sacred flame\n
+           • 1st level (2 slots): cure wounds, bless"
 actions:
-  - name: Quarterstaff
+  - name: Mace
     desc: "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. 
-          Hit: 3 (1d6) bludgeoning damage, or 4 (1d8) bludgeoning damage if used with two hands."
+          Hit: 3 (1d6) bludgeoning damage."
 reactions: ""
 legendary_desc: ""
 legendary_actions: ""

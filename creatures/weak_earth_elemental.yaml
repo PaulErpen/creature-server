@@ -4,7 +4,7 @@ size: Medium
 type: elemental
 group: Elementals
 alignment: neutral
-armor_class: 16
+armor_class: 14
 armor_desc: natural armor
 hit_points: 45
 hit_dice: 6d10 + 12
