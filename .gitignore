@@ -2,3 +2,4 @@ public/statblock5e
 node_modules
 ignored
 package-lock.json
+.vscode
