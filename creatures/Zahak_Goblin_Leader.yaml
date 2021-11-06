@@ -1,0 +1,92 @@
+slug: zahak_goblin_leader
+name: Zahak, Ilan'Shar Leader
+size: Medium
+type: humanoid
+subtype: goblinoid
+group:
+alignment: chaotic evil
+armor_class: 16
+armor_desc: hide armor, shield
+hit_points: 27
+hit_dice: 5d8+5
+speed:
+  walk: 30
+strength: 15
+dexterity: 14
+constitution: 13
+intelligence: 8
+wisdom: 11
+charisma: 9
+strength_save:
+dexterity_save:
+constitution_save:
+intelligence_save:
+wisdom_save:
+charisma_save:
+perception:
+skills:
+  stealth: 6
+  survival: 2
+damage_vulnerabilities: ''
+damage_resistances: ''
+damage_immunities: ''
+condition_immunities: ''
+senses: darkvision 60 ft., passive Perception 10
+languages: Common, Goblin
+challenge_rating: '1'
+actions:
+- name: Morningstar
+  desc: 'Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 11 (2d8 + 2)
+    piercing damage.'
+  attack_bonus: 4
+  damage_dice: 2d8
+  damage_bonus: 2
+- name: Javelin
+  desc: 'Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft.,
+    one target. Hit: 9 (2d6 + 2) piercing damage in melee or 5 (1d6 + 2) piercing
+    damage at range.'
+  attack_bonus: 4
+  damage_dice: 2d6
+  damage_bonus: 2
+reactions: ''
+legendary_desc: ''
+legendary_actions: ''
+special_abilities:
+- name: Brute
+  desc: A melee weapon deals one extra die of its damage when the bugbear hits with
+    it (included in the attack).
+- name: Surprise Attack
+  desc: If the bugbear surprises a creature and hits it with an attack during the
+    first round of combat, the target takes an extra 7 (2d6) damage from the attack.
+  attack_bonus: 0
+  damage_dice: 2d6
+- name: Vicious warcry (3/Encounter)
+  desc: As a bonus action the Ilan'Shar lets out a vicious roar in order to recklessly spur on an ally.
+    An allied creature of the Ilan'Shars choice that hears the warcry falls into a self-destructive battle trance.
+    For the rest of combat their AC becomes 0 and their life total 1.
+    They then make two attacks against any enemy in range. 
+spell_list: []
+img_main:
+document__slug: wotc-srd
+document__title: Systems Reference Document
+document__license_url: http://open5e.com/legal
+description: "Zahak is a large, hairy goblinoid (Ilan'Shar/Bugbear).
+  He has long braided hair and brown skin.
+  He looks as if he had a rough time lately.
+  His skin bears scars and he has a hungry look in his eyes.
+  His demeanor is quiet and dismissive.
+  He is an opportunist looking our for himself and his interests.
+  Despite his sorry state he is a force to be reckoned with.
+  He is dominating toward his allies and prone to violence.
+  \n\n
+  Zahak and his subjects escaped the goblin mines in the eastern Lyndwurm valley.
+  Since then they have only encountered more peril.
+  They got into a thunderstorm, were set upon by a wight and encountered a roaming earth elemental.
+  They want to settle into a ruin to the north, but the area is still occupied by the earth elemental.
+  Now they are at odds with the Black Hands after raiding a nearby farmstead.
+  Raka Val wants them dead or at least driven out of the local area.
+  \n\n
+  On his body Zahak carries the following things of note with him:\n
+  • A heavy iron key, stolen from the overseer of the goblin mines (unlocks the great iron door)\n
+  • A heavy Ilan'Shari morningstar worth 30 gp\n
+  • A squiggly note detailing an order of 200 ballista bolts for 'the pesky Elf'\n"

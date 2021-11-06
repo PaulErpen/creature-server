@@ -40,8 +40,8 @@ actions:
     attack_bonus: 4
     damage_dice: 1d6
     damage_bonus: 2
-  - name: Hand Crossbow
-    desc: "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 5 (1d6
+  - name: Short bow
+    desc: "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6
       + 2) piercing damage, and the target must succeed on a DC 13 Constitution
       saving throw or be poisoned for 1 hour. If the saving throw fails by 5 or
       more, the target is also unconscious while poisoned in this way. The
@@ -73,3 +73,10 @@ img_main: null
 document__slug: wotc-srd
 document__title: Systems Reference Document
 document__license_url: http://open5e.com/legal
+description: "The white hunter is a henchman of the white lady.
+  He does not speak, nor does he communicate in any other way.
+  If players read his mind they will be overcome by a wave of extreme cold.
+  \n\n
+  The white hunter is on the search for Mearra Erhall and other spellcasters.
+  He will go to any length to obduct his targets.
+  He is accompanied by a bony, white and furless dog (see Wolf statblock)."

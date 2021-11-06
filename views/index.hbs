@@ -28,6 +28,11 @@
       margin-top: 20px;
     }
 
+    .description {
+      margin: 20px;
+      max-width: 420px;
+    }
+
     .stat-block-wrapper {
       float: left;
     }
@@ -182,6 +187,11 @@
         {{/each}}
       {{/if}}
     </stat-block>
+    {{#if description}}
+      <div class="description">
+        {{breaklines description}}
+      </div>
+    {{/if}}
   </div>
   {{/each}}
 </body>

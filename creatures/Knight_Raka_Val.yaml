@@ -1,0 +1,81 @@
+slug: raka_val
+name: Raka Val, Lady of Karalsund (Knight)
+size: Medium
+type: human
+group:
+alignment: lawful good
+armor_class: 18
+armor_desc: plate
+hit_points: 42
+hit_dice: 6d8
+speed:
+  walk: 30
+strength: 16
+dexterity: 11
+constitution: 14
+intelligence: 11
+wisdom: 11
+charisma: 15
+strength_save:
+dexterity_save:
+constitution_save: 4
+intelligence_save:
+wisdom_save: 2
+charisma_save:
+perception:
+damage_vulnerabilities: ''
+damage_resistances: ''
+damage_immunities: ''
+condition_immunities: ''
+senses: passive Perception 10
+languages: Common, Orcish
+challenge_rating: '3'
+actions:
+- name: Multiattack
+  desc: The knight makes two melee attacks.
+- name: Longsword
+  desc: 'Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3)
+    slashing damage.'
+  attack_bonus: 5
+  damage_dice: 2d6
+  damage_bonus: 3
+- name: Longbow
+  desc: 'Ranged Weapon Attack: +2 to hit, range 100/400 ft., one target. Hit: 5 (1d8)
+    piercing damage.'
+  attack_bonus: 2
+  damage_dice: 1d8
+- name: Leadership (Recharges after a Short or Long Rest)
+  desc: For 1 minute, the knight can utter a special command or warning whenever a
+    nonhostile creature that it can see within 30 ft. of it makes an attack roll or
+    a saving throw. The creature can add a d4 to its roll provided it can hear and
+    understand the knight. A creature can benefit from only one Leadership die at
+    a time. This effect ends if the knight is incapacitated.
+- name: Clerionnian Charge (1/Day)
+  desc: The knight chooses up to two willing creatures. 
+    The chosen creatures and the knight all need to be mounted. 
+    They can all take an extra movement during the knights turn.
+    Afterwards they may make a melee attack against a creature in range.
+reactions:
+- name: Parry
+  desc: The knight adds 2 to its AC against one melee attack that would hit it. To
+    do so, the knight must see the attacker and be wielding a melee weapon.
+legendary_desc: ''
+legendary_actions: ''
+special_abilities:
+- name: Brave
+  desc: The knight has advantage on saving throws against being frightened.
+spell_list: []
+img_main:
+document__slug: wotc-srd
+document__title: Systems Reference Document
+document__license_url: http://open5e.com/legal
+description: "A former knight of Cleryonne. 
+  She was a general during Ascanthian wars and is now the lady of Karalsund.
+  She has tanned skin and brown hair. 
+  Her demeanor is aprubt and she has a bit of a hubris. 
+  Her bond is the loyalty to the few remaining people of Karalsund and the duty that comes with her title.
+  \n\n
+  Born in the steppes near Cleryonne she wasn't of noble descent.
+  Through her military career she gained a title and received a small estate near the Eastern mountains.
+  The land here is largely abandoned and the left over outposts are often ravaged by raiders or roaming elementals.
+  She has formed a small militia trying to restore order in and around Karalsund."
