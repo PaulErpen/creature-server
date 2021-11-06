@@ -79,7 +79,8 @@ app.get("/", (req, res) => {
                 "creatures": files
                 .map(file => {
                     let contents = fs.readFileSync(__dirname + "/creatures/" +file, 'utf8')
-                    switch (file.split(".").at(-1)) {
+                    let file_parts = file.split(".")
+                    switch (file_parts[file_parts.length - 1]) {
                         case "json": return JSON.parse(contents)
                         case "yaml": return YAML.parse(contents)
                     }
