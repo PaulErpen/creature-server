@@ -2,6 +2,7 @@ const express = require("express")
 const path = require("path")
 const handlebars = require("hbs")
 const YAML = require("yaml")
+const fs = require("fs");
 
 const app = express()
 const port = 3000
@@ -37,6 +38,8 @@ const crToXPMapping = {
     "30": 155_000
 }
 app.set("views", path.join(__dirname, "views"));
+
+handlebars.registerPartial("statblock", handlebars.compile(fs.readFileSync("./views/statblock.hbs").toString()));
 handlebars.registerHelper("ifEquals", function(arg1, arg2, options) {
     return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
 });
@@ -70,7 +73,6 @@ app.use("/", express.static(__dirname + "/public"))
 app.use("/src", express.static(__dirname + "/public/statblock5e/src"))
 
 app.get("/", (req, res) => {
-    var fs = require("fs");
     fs.readdir(path.join(__dirname, "creatures"), (err, files) => {
             if (err) {
                 res.status(500).send("Could'nt read creature files directory!")
