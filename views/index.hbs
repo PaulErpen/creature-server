@@ -17,14 +17,10 @@
   <script type="module" src="statblock5e/src/js/abilities-block.js"></script>
   <script type="module" src="statblock5e/src/js/property-line.js"></script>
   <script type="module" src="statblock5e/src/js/property-block.js"></script>
-  <script src="js/require.js"></script>
-  <script src="js/screenshot.js"></script>
 </head>
 <body>
   <div class="creature-wrapper">
     {{#each creatures}}
-      <div class="screenshot-wrapper">
-        <button id="screenshot-{{slug}}" type="button" class="screenshot-button" data-slug="{{slug}}">Screenshot</button>
         {{> statblock}}
       </div>
     {{/each}}
