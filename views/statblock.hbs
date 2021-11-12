@@ -1,4 +1,5 @@
 <div class="stat-block-wrapper">
+  <div id="screenshot-target-{{slug}}">
     <stat-block>
       <creature-heading>
         <h1>{{this.name}}</h1>
@@ -145,9 +146,10 @@
         {{/each}}
       {{/if}}
     </stat-block>
-    {{#if description}}
-      <div class="description">
-        {{breaklines description}}
-      </div>
-    {{/if}}
   </div>
+  {{#if description}}
+    <div class="description">
+      {{breaklines description}}
+    </div>
+  {{/if}}
+</div>

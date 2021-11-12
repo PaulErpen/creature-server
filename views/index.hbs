@@ -8,6 +8,8 @@
         rel='stylesheet' type='text/css'>
   <link href='//fonts.googleapis.com/css?family=Libre+Baskerville:700'
         rel='stylesheet' type='text/css'>
+  <link href='styles/styles.css'
+        rel='stylesheet' type='text/css'>
 
   <script type="module" src="statblock5e/src/js/stat-block.js"></script>
   <script type="module" src="statblock5e/src/js/creature-heading.js"></script>
@@ -15,32 +17,17 @@
   <script type="module" src="statblock5e/src/js/abilities-block.js"></script>
   <script type="module" src="statblock5e/src/js/property-line.js"></script>
   <script type="module" src="statblock5e/src/js/property-block.js"></script>
-
-  <style>
-    body {
-      margin: 0;
-    }
-
-    stat-block {
-      /* A bit of margin for presentation purposes, to show off the drop
-      shadow. */
-      margin-left: 20px;
-      margin-top: 20px;
-    }
-
-    .description {
-      margin: 20px;
-      max-width: 420px;
-    }
-
-    .stat-block-wrapper {
-      float: left;
-    }
-  </style>
+  <script src="js/require.js"></script>
+  <script src="js/screenshot.js"></script>
 </head>
 <body>
-  {{#each creatures}}
-    {{> statblock}}
-  {{/each}}
+  <div class="creature-wrapper">
+    {{#each creatures}}
+      <div class="screenshot-wrapper">
+        <button id="screenshot-{{slug}}" type="button" class="screenshot-button" data-slug="{{slug}}">Screenshot</button>
+        {{> statblock}}
+      </div>
+    {{/each}}
+  </div>
 </body>
 </html>

@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+}
+
+stat-block {
+/* A bit of margin for presentation purposes, to show off the drop
+shadow. */
+    margin: 20px 20px 0 20px;
+}
+
+.description {
+    margin: 20px;
+    max-width: 420px;
+}
+
+.stat-block-wrapper {
+    /*float: left;*/
+}
+
+.screenshot-button {
+    position: absolute;
+    left: 366px;
+    top: 14px;
+    z-index: 10;
+}
+
+.screenshot-wrapper {
+    display: flex;
+    position: relative;
+    float: left;
+}
+
+.screenshot-wrapper .screenshot-button {
+    display: none;
+}
+
+.screenshot-wrapper:hover .screenshot-button {
+    display: block;
+}
