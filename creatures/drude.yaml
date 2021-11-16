@@ -1,0 +1,59 @@
+slug: drude
+name: Drude
+size: Small
+type: monstrosity
+subtype: ''
+group:
+alignment: chaotic evil
+armor_class: 12
+armor_desc:
+hit_points: 22
+hit_dice: 3d8+7
+speed:
+  walk: 20
+  fly: 40
+strength: 8
+dexterity: 14
+constitution: 9
+intelligence: 7
+wisdom: 12
+charisma: 12
+strength_save:
+dexterity_save:
+constitution_save:
+intelligence_save:
+wisdom_save:
+charisma_save:
+perception:
+skills:
+damage_vulnerabilities: ''
+damage_resistances: ''
+damage_immunities: ''
+condition_immunities: ''
+senses: passive Perception 11
+languages: Common
+challenge_rating: '1/2'
+actions:
+- name: Multiattack
+  desc: 'The drude makes two attacks with its claws.'
+- name: Claws
+  desc: 'Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1)
+    slashing damage.'
+  attack_bonus: 3
+  damage_dice: 2d4
+  damage_bonus: 1
+- name: Unsettling screech
+  desc: "The drude let's out a blaring screech. 
+    Every humanoid and giant within 30 ft. of the drude that can hear the screech must succeed on a DC 11 Wisdom saving throw or be frightened for 3 rounds (15 seconds).
+    A creature can also repeat the saving throw at the end of each of its turns. 
+    If a creature's saving throw is successful, the effect ends on it.
+    A target that successfully saves is immune to any drude's screech for the next 24 hours."
+reactions: ''
+legendary_desc: ''
+legendary_actions: ''
+special_abilities: ''
+spell_list: []
+img_main:
+document__slug: wotc-srd
+document__title: Systems Reference Document
+document__license_url: http://open5e.com/legal
