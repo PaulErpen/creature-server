@@ -1,0 +1,45 @@
+slug: verzerrungsbestie
+name: Verzerrungsbestie
+size: Großes
+type: Monster
+subtype: ''
+group:
+alignment: 
+armor_class: 15
+armor_desc:
+hit_points: 8
+hit_dice: 1d8
+speed:
+  laufen: 10
+strength: 15
+dexterity: 15
+constitution: 16
+intelligence: 3
+wisdom: 12
+charisma: 10
+strength_save:
+dexterity_save:
+constitution_save:
+intelligence_save:
+wisdom_save:
+charisma_save:
+perception:
+skills:
+damage_vulnerabilities: ''
+damage_resistances: ''
+damage_immunities: ''
+condition_immunities: ''
+senses: passive Perception 11
+languages: Versteht Elfisch, kann es aber nicht sprechen
+actions:
+- name: Klauen
+  desc: 'Nahkampf Attacke: 1d20+4 für den Trefferwurf, Reichweite 1.5 meter (1 Feld), ein Ziel. Bei Treffer: 1d8 + 2, Schnitt-Schaden.'
+reactions: ''
+legendary_desc: ''
+legendary_actions: ''
+special_abilities: ''
+spell_list: []
+img_main:
+document__slug: wotc-srd
+document__title: Systems Reference Document
+document__license_url: http://open5e.com/legal

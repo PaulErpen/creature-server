@@ -7,8 +7,8 @@ group:
 alignment: chaotic evil
 armor_class: 12
 armor_desc:
-hit_points: 22
-hit_dice: 3d8+7
+hit_points: 16
+hit_dice: 3d8
 speed:
   walk: 20
   fly: 40
