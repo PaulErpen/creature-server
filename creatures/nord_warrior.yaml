@@ -1,0 +1,53 @@
+slug: nord_warrior
+name: Nord Warrior
+size: Medium
+type: humanoid
+subtype: any race
+group:
+alignment: any alignment
+armor_class: 14
+armor_desc: Hide
+hit_points: 14
+hit_dice: 2d8
+speed:
+  walk: 30
+strength: 14
+dexterity: 14
+constitution: 14
+intelligence: 10
+wisdom: 10
+charisma: 10
+strength_save:
+dexterity_save:
+constitution_save:
+intelligence_save:
+wisdom_save:
+charisma_save:
+perception: 2
+skills:
+  perception: 2
+damage_vulnerabilities: ''
+damage_resistances: ''
+damage_immunities: ''
+condition_immunities: ''
+senses: passive Perception 10
+languages: Common, some old Nordic
+challenge_rating: 1/8
+actions:
+- name: Spear
+  desc: 'Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft.,
+    one target. Hit: 4 (1d6 + 2) piercing damage or 5 (1d8 + 2) piercing damage if
+    used with two hands to make a melee attack.'
+- name: Shortbow
+  desc: "Ranged Weapon Attack: +4 to hit, range 80/320, Hit: 1d6 + 2 piercing"
+- name: Handaxe
+  desc: "Melee or Ranged Weapon Attack: +4 to hit, reach 5ft. or range 20/60, Hit: 1d6 + 2 slashing"
+reactions: ''
+legendary_desc: ''
+legendary_actions: ''
+special_abilities: ''
+spell_list: []
+img_main:
+document__slug: wotc-srd
+document__title: Systems Reference Document
+document__license_url: http://open5e.com/legal

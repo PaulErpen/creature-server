@@ -33,7 +33,7 @@ senses: passive Perception 11
 languages: Versteht Elfisch, kann es aber nicht sprechen
 actions:
 - name: Klauen
-  desc: 'Nahkampf Attacke: 1d20+4 für den Trefferwurf, Reichweite 1.5 meter (1 Feld), ein Ziel. Bei Treffer: 1d8 + 2, Schnitt-Schaden.'
+  desc: 'Nahkampf Attacke: 1d20+4 für den Trefferwurf, Reichweite 1 meter (1 Feld), ein Ziel. Bei Treffer: 1d8 + 2, Schnitt-Schaden.'
 reactions: ''
 legendary_desc: ''
 legendary_actions: ''
