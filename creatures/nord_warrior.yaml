@@ -7,8 +7,8 @@ group:
 alignment: any alignment
 armor_class: 14
 armor_desc: Hide
-hit_points: 14
-hit_dice: 2d8
+hit_points: 28
+hit_dice: 4d8
 speed:
   walk: 30
 strength: 14
@@ -23,16 +23,15 @@ constitution_save:
 intelligence_save:
 wisdom_save:
 charisma_save:
-perception: 2
 skills:
-  perception: 2
+  Perception: "+2"
 damage_vulnerabilities: ''
 damage_resistances: ''
 damage_immunities: ''
 condition_immunities: ''
 senses: passive Perception 10
 languages: Common, some old Nordic
-challenge_rating: 1/8
+challenge_rating: 1
 actions:
 - name: Spear
   desc: 'Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft.,
@@ -45,7 +44,10 @@ actions:
 reactions: ''
 legendary_desc: ''
 legendary_actions: ''
-special_abilities: ''
+special_abilities:
+- name: Reckless Attack
+  desc: 'When making their first Attack on their turn, the warrior can decide to Attack recklessly. 
+    Doing so gives them advantage on melee weapon Attack rolls using Strength during this turn, but Attack rolls against them have advantage until their next turn.'
 spell_list: []
 img_main:
 document__slug: wotc-srd

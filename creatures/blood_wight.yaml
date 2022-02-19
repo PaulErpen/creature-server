@@ -1,0 +1,63 @@
+slug: blood_wight
+name: Blood Wight
+size: Medium
+type: undead
+subtype: ''
+group:
+alignment: neutral evil
+armor_class: 12
+armor_desc:
+hit_points: 45
+hit_dice: 6d8+18
+speed:
+  walk: 30
+strength: 15
+dexterity: 14
+constitution: 16
+intelligence: 10
+wisdom: 13
+charisma: 15
+strength_save:
+dexterity_save:
+constitution_save:
+intelligence_save:
+wisdom_save:
+charisma_save:
+perception: 3
+skills:
+  perception: 3
+  stealth: 4
+damage_vulnerabilities: ''
+damage_resistances: ''
+damage_immunities: necrotic; bludgeoning, piercing, and slashing from nonmagical weapons
+  that aren't silvered
+condition_immunities: poisoned
+senses: darkvision 60 ft., passive Perception 13
+languages: the languages it knew in life
+challenge_rating: '3'
+actions:
+- name: Multiattack
+  desc: The wight makes two claw attacks. It can use its
+    Life Drain in place of one claw attack.
+- name: Life Drain
+  desc: |-
+    Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) necrotic damage. The target must succeed on a DC 13 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. 
+    This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.
+    A humanoid slain by this attack rises 24 hours later as a zombie under the wight's control, unless the humanoid is restored to life or its body is destroyed. The wight can have no more than twelve zombies under its control at one time.
+- name: Claws
+  desc: 4 to hit, reach 5 ft., one target. 7 (2d4 + 2) slashing damage.
+reactions: ''
+legendary_desc: ''
+legendary_actions: ''
+special_abilities:
+- name: Sunlight Sensitivity
+  desc: While in sunlight, the wight has disadvantage on attack rolls, as well as
+    on Wisdom (Perception) checks that rely on sight.
+spell_list: []
+img_main:
+document__slug: wotc-srd
+document__title: Systems Reference Document
+document__license_url: http://open5e.com/legal
+description: "This creature is a pitch black undead, with bizarre elonguated arms that end in vicious claws. 
+  It can often be the result of a poorly made sacrifice.
+  They crave more blood sacrifices made in the name of whatever they were sacrificed to."

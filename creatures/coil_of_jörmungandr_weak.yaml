@@ -1,0 +1,53 @@
+active: false
+slug: coil_of_jörmungandr_weak
+name: Coil of Jörmungandr (Weak) - Basilisk
+size: Large
+type: humanoid
+subtype: any race
+group:
+alignment: any alignment
+armor_class: 15
+armor_desc: Natural Armor
+hit_points: 52 
+hit_dice: "8d8 + 16"
+speed:
+  walk: 20
+strength: 16
+dexterity: 8
+constitution: 15 
+intelligence: 2
+wisdom: 5
+charisma: 5
+strength_save:
+dexterity_save:
+constitution_save:
+intelligence_save:
+wisdom_save:
+charisma_save:
+perception: 
+skills:
+damage_vulnerabilities: ''
+damage_resistances: ''
+damage_immunities: ''
+condition_immunities: ''
+senses: Passive Perception 7
+languages: Draconic
+challenge_rating: 3
+actions:
+- name: Bite
+  desc: 'Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage plus 7 (1d6) poison damage.'
+reactions: ''
+legendary_desc: ''
+legendary_actions: ''
+special_abilities:
+- name: Petrifying Gaze
+  desc: "If a creature starts its turn within 30 feet of the basilisk and the two of them can see each other, the basilisk can force the creature to make a DC 12 Constitution saving throw if the basilisk isn't incapacitated. On a failed save, the creature magically begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified until freed by the greater restoration spell or other magic.
+    \n\n
+    A creature that isn't surprised can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can't see the basilisk until the start of its next turn, when it can avert its eyes again.
+    \n\n
+    If it looks at the basilisk in the meantime, it must immediately make the save. If the basilisk sees its reflection within 30 feet of it in bright light, it mistakes itself for a rival and targets itself with its gaze."
+spell_list: []
+img_main:
+document__slug: wotc-srd
+document__title: Systems Reference Document
+document__license_url: http://open5e.com/legal
