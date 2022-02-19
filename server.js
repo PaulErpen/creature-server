@@ -87,6 +87,10 @@ app.get("/", (req, res) => {
                         case "yaml": return YAML.parse(contents)
                     }
                 })
+                .filter(
+                    //filtering out creatures that have been set as inactive
+                    parsed => parsed.active != false
+                )
         })
     })
 })
