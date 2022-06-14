@@ -1,4 +1,4 @@
-active: false
+active: true
 slug: coil_of_jörmungandr_weak
 name: Coil of Jörmungandr (Weak) - Basilisk
 size: Large
@@ -26,7 +26,7 @@ wisdom_save:
 charisma_save:
 perception: 
 skills:
-damage_vulnerabilities: ''
+damage_vulnerabilities: 'cold'
 damage_resistances: ''
 damage_immunities: ''
 condition_immunities: ''
